@@ -1,0 +1,72 @@
+// 全局样式修改或无法使用module的修改
+
+// antd修改样式
+.ant-modal {
+    padding-bottom: 0 !important;
+}
+
+.ant-tabs-bar {
+    margin: 0 !important;
+}
+
+.ant-tabs-tab,
+.ant-tabs-tab-active {
+    border: none !important;
+    height: 39px !important;
+}
+
+.ant-tabs-content {
+    height: calc(100% - 40px);
+
+    .ant-tabs-tabpane-active {
+        height: 100%;
+    }
+}
+
+.ant-tree.ant-tree-directory>li span.ant-tree-node-content-wrapper:hover::before,
+.ant-tree.ant-tree-directory .ant-tree-child-tree>li span.ant-tree-node-content-wrapper:hover::before,
+.ant-dropdown-menu-item:hover,
+.ant-dropdown-menu-submenu-title:hover,
+.ant-table-thead>tr.ant-table-row-selected>td,
+.ant-table-tbody>tr.ant-table-row-selected>td,
+.ant-table-thead>tr:hover.ant-table-row-selected>td,
+.ant-table-tbody>tr:hover.ant-table-row-selected>td,
+.ant-table-thead>tr:hover.ant-table-row>td,
+.ant-table-tbody>tr:hover.ant-table-row>td {
+    background: transparent !important;
+}
+
+.ant-menu-inline .ant-menu-item,
+.ant-menu-inline .ant-menu-submenu-title {
+    width: 100%;
+}
+
+.ant-pagination-item-link,
+.ant-table-placeholder,
+.ant-collapse,
+.ant-collapse-content,
+.ant-collapse>.ant-collapse-item {
+    border: none !important;
+}
+
+.ant-select-dropdown {
+    max-height: 600px !important;
+}
+
+.ant-pagination {
+    text-align: right;
+    margin: 8px 0 !important;
+}
+
+.ant-row {
+    line-height: 54px;
+}
+
+.ant-modal-header {
+    padding: 16px 8px;
+}
+
+.ant-modal-body {
+    max-height: 680px;
+    overflow: auto;
+}

@@ -1,0 +1,189 @@
+@import "vars";
+
+// 自定义样式颜色配置,相关antd主题配置
+// 遮罩层 固定
+.ant-modal-mask,
+.ant-drawer-mask {
+    background-color: fade(#000, 30%);
+}
+
+.ant-btn-primary {
+    color: #fff !important;
+}
+
+// 空数据
+.ant-empty-normal,
+.ant-pagination-options-size-changer .ant-select-arrow {
+    color: @text-color-secondary;
+}
+
+// 分页组件
+.ant-pagination-item,
+.ant-pagination-prev .ant-pagination-item-link,
+.ant-pagination-next .ant-pagination-item-link,
+.ant-page-header-heading {
+    background-color: @layout-header-background;
+}
+
+.ant-pagination-options .ant-select-dropdown-menu-item,
+.ant-pagination-options .ant-select-dropdown-menu-item-selected,
+.ant-pagination-options-size-changer .ant-select-selection,
+.ant-pagination-options .ant-select-dropdown-menu-item:hover:not(.ant-select-dropdown-menu-item-disabled) {
+    color: @text-color;
+    background-color: @layout-header-background;
+}
+
+// message组件
+.ant-message-notice-content {
+    background: @layout-body-background;
+}
+
+// input框以及其派生组件
+.ant-btn,
+.ant-input,
+.ant-input-number,
+.ant-select,
+.ant-pagination-options-quick-jumper input,
+.ant-select-dropdown-menu-item,
+.ant-select-dropdown-menu-item-selected,
+.ant-input-affix-wrapper .ant-input-prefix,
+.ant-input-affix-wrapper .ant-input-suffix,
+.ant-cascader-picker,
+.ant-cascader-menus,
+.ant-calendar-picker-container,
+.ant-calendar-range .ant-calendar-input,
+.ant-calendar-range .ant-calendar-time-picker-input,
+.ant-calendar-date,
+.ant-calendar-year-panel-year,
+.ant-calendar-month-panel-month,
+.ant-calendar-decade-panel-decade,
+.ant-mentions,
+.ant-mentions-dropdown-menu-item,
+.ant-time-picker-input,
+.ant-time-picker-panel,
+.ant-card-head .ant-tabs,
+.ant-input-group-addon:last-child,
+.ant-input-number-input,
+.ant-select-tree,
+.ant-select-tree li .ant-select-tree-node-content-wrapper,
+.ant-select-selection--multiple .ant-select-selection__choice,
+.ant-select-selection--multiple .ant-select-selection__choice__remove svg,
+.ant-select-tree li span.ant-select-tree-switcher.ant-select-tree-switcher_close .ant-select-switcher-icon svg,
+.ant-select-tree li span.ant-select-tree-switcher.ant-select-tree-switcher_open .ant-select-switcher-icon svg {
+    color: rgba(0, 0, 0, 0.70);
+}
+
+.ant-empty-normal,
+.ant-input-search-icon,
+.ant-select-selection--multiple .ant-select-selection__choice__remove,
+.ant-select-selection__clear:hover,
+.ant-select-dropdown-menu-item-group-title {
+    color: rgba(0, 0, 0, 0.5);
+}
+
+.ant-calendar-header .ant-calendar-century-select,
+.ant-calendar-header .ant-calendar-decade-select,
+.ant-calendar-header .ant-calendar-year-select,
+.ant-calendar-header .ant-calendar-month-select,
+.ant-calendar-year-panel-header .ant-calendar-year-panel-century-select,
+.ant-calendar-year-panel-header .ant-calendar-year-panel-decade-select,
+.ant-calendar-year-panel-header .ant-calendar-year-panel-year-select,
+.ant-calendar-year-panel-header .ant-calendar-year-panel-month-select,
+.ant-calendar-month-panel-header .ant-calendar-month-panel-century-select,
+.ant-calendar-month-panel-header .ant-calendar-month-panel-decade-select,
+.ant-calendar-month-panel-header .ant-calendar-month-panel-year-select,
+.ant-calendar-month-panel-header .ant-calendar-month-panel-month-select {
+    color: fade(#000, 90%);
+}
+
+// 禁用样式
+.ant-calendar .ant-calendar-ok-btn-disabled,
+.ant-calendar .ant-calendar-ok-btn.disabled,
+.ant-calendar .ant-calendar-ok-btn[disabled],
+.ant-calendar .ant-calendar-ok-btn-disabled:hover,
+.ant-calendar .ant-calendar-ok-btn.disabled:hover,
+.ant-calendar .ant-calendar-ok-btn[disabled]:hover,
+.ant-calendar .ant-calendar-ok-btn-disabled:focus,
+.ant-calendar .ant-calendar-ok-btn.disabled:focus,
+.ant-calendar .ant-calendar-ok-btn[disabled]:focus,
+.ant-calendar .ant-calendar-ok-btn-disabled:active,
+.ant-calendar .ant-calendar-ok-btn.disabled:active,
+.ant-calendar .ant-calendar-ok-btn[disabled]:active,
+.ant-calendar .ant-calendar-ok-btn-disabled.active,
+.ant-calendar .ant-calendar-ok-btn.disabled.active,
+.ant-calendar .ant-calendar-ok-btn[disabled].active,
+.ant-calendar-time .ant-calendar-footer .ant-calendar-time-picker-btn-disabled,
+li.ant-select-tree-treenode-disabled>span:not(.ant-select-tree-switcher),
+li.ant-select-tree-treenode-disabled>.ant-select-tree-node-content-wrapper,
+li.ant-select-tree-treenode-disabled>.ant-select-tree-node-content-wrapper span,
+.ant-select-selection__clear {
+    color: fade(#000, 30%);
+}
+
+// 分页文字禁用颜色
+.ant-pagination-disabled a,
+.ant-pagination-disabled:hover a,
+.ant-pagination-disabled:focus a,
+.ant-pagination-disabled .ant-pagination-item-link,
+.ant-pagination-disabled:hover .ant-pagination-item-link,
+.ant-pagination-disabled:focus .ant-pagination-item-link {
+    color: @text-color-secondary;
+}
+
+// 以下为自定义颜色
+// 表格背景色
+.ant-collapse,
+.ant-card-actions,
+.ant-drawer-header,
+.ant-table-header,
+.ant-table-thead>tr>th,
+.ant-modal-header {
+    background: @table-header-background;
+}
+
+.ant-dropdown-menu,
+.ant-collapse-content,
+.ant-card,
+.ant-drawer-content,
+.ant-popover-inner,
+.ant-modal-content,
+.ant-table-fixed-header>.ant-table-content>.ant-table-scroll>.ant-table-body,
+.ant-table-placeholder {
+    background: @table-body-background;
+}
+
+// 菜单背景色
+.ant-menu-dark,
+.ant-menu-dark .ant-menu-sub,
+.ant-menu-dark .ant-menu-inline.ant-menu-sub,
+.menu {
+    background: @menu-background;
+}
+
+// 边框颜色
+.menu {
+    border-color: @line-color;
+}
+
+.footer {
+    border-top: 2px solid @line-color;
+}
+
+// tabs背景色,菜单顶部颜色
+.menuTitle,
+.ant-tabs.ant-tabs-card .ant-tabs-card-bar .ant-tabs-tab {
+    background: @tabs-background;
+}
+
+.ant-tabs.ant-tabs-card .ant-tabs-card-bar .ant-tabs-tab {
+    border: 1px solid @tabs-background;
+}
+
+.ant-tabs-bar {
+    border-bottom: 1px solid @line-color;
+}
+
+// table 前面加号背景和颜色
+.ant-table .ant-table-row-indent + .ant-table-row-expand-icon{
+background-color: @table-body-background;
+}

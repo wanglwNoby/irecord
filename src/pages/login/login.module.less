@@ -1,0 +1,65 @@
+.loginContainer {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.9);
+
+    .banner {
+        display: flex;
+        justify-content: center;
+        margin-bottom: 8px;
+
+        img {
+            height: 50px;
+            margin-right: 8px;
+        }
+
+        h1 {
+            font-size: 32px;
+            color: #ffffff;
+            margin: 0;
+        }
+    }
+
+    .loginForm {
+        height: 150px;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        padding-top: 50px;
+        border-top: 2px solid #2F4F4F;
+        border-bottom: 2px solid #2F4F4F;
+        background-color: rgba(101, 101, 101, 0.2);
+
+        input {
+            height: 40px;
+            width: 288px;
+        }
+
+        button {
+            height: 40px;
+            font-size: 24px;
+        }
+    }
+}
+
+.modalWrapper :global {
+    color: rgba(255, 255, 255, 0.65) !important;
+
+    .ant-modal-content {
+        background: #2C3E50;
+
+        .ant-modal-close {
+            color: rgba(255, 255, 255, 0.65);
+        }
+    }
+
+    .ant-modal-header {
+        background: #1d2935;
+
+        .ant-modal-title {
+            color: rgba(255, 255, 255, 0.65);
+        }
+    }
+}

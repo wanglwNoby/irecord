@@ -1,0 +1,67 @@
+.layout {
+    height: 100%;
+
+    .header {
+        padding-left: 20px;
+
+        img {
+            height: 40px;
+            float: left;
+            margin-top: 12px;
+        }
+
+        .logoTitle {
+            font-size: 24px;
+            float: left;
+            font-weight: bold;
+        }
+
+        .headerRight {
+            margin-left: 50px;
+            float: right !important;
+
+            .icon {
+                font-size: 20px;
+                margin-left: 20px;
+                cursor: pointer;
+            }
+        }
+    }
+
+    .main {
+        height: calc(100% - 99px);
+        display: flex;
+        overflow: auto;
+
+        .tabs :global {
+            flex: 1;
+            height: 100%;
+            width: calc(100% - 248px);
+
+            .ant-tabs-bar {
+                width: calc(100% - 256px);
+            }
+        }
+    }
+
+    .footer {
+        padding: 5px 50px;
+        text-align: center;
+    }
+}
+
+.modulesWrapper {
+    display: inline-block;
+    width: 80px;
+    margin-right: 8px;
+
+    .linkWrapper {
+        display: inline-block;
+        text-align: center;
+
+        img {
+            width: 80px;
+            height: 80px;
+        }
+    }
+}
