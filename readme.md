@@ -19,19 +19,3 @@
   |--actions 
   |--reducers
 |--router // 路由,未用到
-
-
-# ant-modal挂载方法
-1.import CustomModal from '../../components/customModal/customModal'
-2.指定container, ref={(container) => { this.container = container }},并且指定container的position: relative;
-3.增加getContainer={this.container}属性;
-
-# 主题皮肤设置
-在public/color.less文件中找到控制该元素的颜色属性，然后
-    vars = Object.assign({}, '此处为需要配置的颜色属性', JSON.parse(localStorage.getItem('theme')))   
-    const win: any = window
-    win.less.modifyVars(vars).then(() => {
-        message.success('主题设置成功')
-    }).catch((error: any) => {
-        message.error('主题设置失败', error)
-    })
